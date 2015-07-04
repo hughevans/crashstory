@@ -36,8 +36,7 @@ Discourse::Application.configure do
       user_name:            GlobalSetting.smtp_user_name,
       password:             GlobalSetting.smtp_password,
       authentication:       GlobalSetting.smtp_authentication,
-      enable_starttls_auto: GlobalSetting.smtp_enable_start_tls,
-      asset_host:           'http://www.crashstory.com/'
+      enable_starttls_auto: GlobalSetting.smtp_enable_start_tls
     }
 
     settings[:openssl_verify_mode] = GlobalSetting.smtp_openssl_verify_mode if GlobalSetting.smtp_openssl_verify_mode
@@ -47,6 +46,8 @@ Discourse::Application.configure do
     #config.action_mailer.delivery_method = :sendmail
     #config.action_mailer.sendmail_settings = {arguments: '-i'}
   end
+
+  config.action_mailer.default_url_options = { host: 'http://www.crashstory.com/' }
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
