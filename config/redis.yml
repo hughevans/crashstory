@@ -3,7 +3,6 @@ defaults: &defaults
   port: <%= GlobalSetting.redis_port %>
   password: <%= GlobalSetting.redis_password %>
   db: <%= GlobalSetting.redis_db %>
-  path: "/opt/bitnami/redis/var/run/redis.sock"
 
 development:
   <<: *defaults
@@ -20,3 +19,4 @@ staging:
 
 production:
   <<: *defaults
+  path: "/opt/bitnami/redis/var/run/redis.sock"
