@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Lato';
+  src: font-url('lato_reg-webfont.eot');
+  src: font-url('lato_reg-webfont.eot?#iefix') format('embedded-opentype'),
+       font-url('lato_reg-webfont.woff') format('woff'),
+       font-url('lato_reg-webfont.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: font-url('lato_reg_it-webfont.eot');
+  src: font-url('lato_reg_it-webfont.eot?#iefix') format('embedded-opentype'),
+       font-url('lato_reg_it-webfont.woff') format('woff'),
+       font-url('lato_reg_it-webfont.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: font-url('lato_bold-webfont.eot');
+  src: font-url('lato_bold-webfont.eot?#iefix') format('embedded-opentype'),
+       font-url('lato_bold-webfont.woff') format('woff'),
+       font-url('lato_bold-webfont.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: font-url('lato_bold_it-webfont.eot');
+  src: font-url('lato_bold_it-webfont.eot?#iefix') format('embedded-opentype'),
+       font-url('lato_bold_it-webfont.woff') format('woff'),
+       font-url('lato_bold_it-webfont.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  text-rendering: optimizeLegibility;
+}
