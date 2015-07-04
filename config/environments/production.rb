@@ -36,15 +36,16 @@ Discourse::Application.configure do
       user_name:            GlobalSetting.smtp_user_name,
       password:             GlobalSetting.smtp_password,
       authentication:       GlobalSetting.smtp_authentication,
-      enable_starttls_auto: GlobalSetting.smtp_enable_start_tls
+      enable_starttls_auto: GlobalSetting.smtp_enable_start_tls,
+      asset_host:           'http://www.crashstory.com/'
     }
 
     settings[:openssl_verify_mode] = GlobalSetting.smtp_openssl_verify_mode if GlobalSetting.smtp_openssl_verify_mode
 
     config.action_mailer.smtp_settings = settings.reject{|_, y| y.nil?}
   else
-    config.action_mailer.delivery_method = :sendmail
-    config.action_mailer.sendmail_settings = {arguments: '-i'}
+    #config.action_mailer.delivery_method = :sendmail
+    #config.action_mailer.sendmail_settings = {arguments: '-i'}
   end
 
   # Send deprecation notices to registered listeners
