@@ -10,7 +10,7 @@ def rails_42?
   ENV["RAILS42"] == '1'
 end
 
-gem 'dotenv-rails', require: 'dotenv/rails-now'
+gem 'dotenv-rails'
 
 if rails_master?
   gem 'arel', git: 'https://github.com/rails/arel.git'
