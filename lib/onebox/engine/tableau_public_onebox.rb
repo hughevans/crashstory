@@ -6,7 +6,7 @@ module Onebox
       matches_regexp /^https?:\/\/public.tableau.com\/shared\/.*$/
 
       def to_html
-        "<iframe src=\"#{@url.split('?')[0]}?:showVizHome=no&:embed=true\" style=\"border-width:0\" frameborder=\"0\" scrolling=\"no\" width=\"100%\" height=\"400px\"></iframe>"
+        "<iframe src=\"#{@url.split('?')[0]}?:showVizHome=no&:embed=true\" style=\"border-width:0\" frameborder=\"0\" scrolling=\"no\" width=\"100%\" height=\"650px\"></iframe>"
       end
     end
   end
